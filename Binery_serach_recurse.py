@@ -77,13 +77,13 @@ def main(N):
     return Average1,Average2
     
 def comparative_table():
-    Average1,Average2=main(100)
+    Average1,Average2=main(10000)
     Av1=Average1
     Av2=Average2
-    Average1,Average2=main(1000)
+    Average1,Average2=main(100000)
     Av3=Average1
     Av4=Average2
-    Average1,Average2=main(5000)
+    Average1,Average2=main(500000)
     Av5=Average1
     Av6=Average2
     xomp_table="""      Binary Search             Interpolation Search
