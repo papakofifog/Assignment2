@@ -74,11 +74,24 @@ def main(N):
         Total_take2=Total_take2+Time_take2
     Average2=Total_take2/5
     print(Average2)
-main(100)
-print()
-main(1000)
-print()
-main(5000)
+    return Average1,Average2
+    
+def comparative_table():
+    Average1,Average2=main(100)
+    Av1=Average1
+    Av2=Average2
+    Average1,Average2=main(1000)
+    Av3=Average1
+    Av4=Average2
+    Average1,Average2=main(5000)
+    Av5=Average1
+    Av6=Average2
+    xomp_table="""      Binary Search             Interpolation Search
+100  {}        {}
+1000 {}        {}
+5000 {}        {}                   """
+    print(xomp_table.format(Av1,Av2,Av3,Av4,Av5,Av6))
+comparative_table()
         
    
     
