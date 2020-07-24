@@ -1,7 +1,8 @@
 from array import array
 import math
 import random
-import Merge_sort
+# According to the question we were supposed to use the python inbuilt sort function so that is what i used.
+#import Merge_sort
 import time
 
 def binary_search(Arr, target,low,high):
@@ -46,7 +47,8 @@ def main(N):
         Arr.append(random.randrange(1,132767))
         
     
-    Merge_sort.merge_SortV2(Arr)
+    #Merge_sort.merge_SortV2(Arr)
+    Arr.sort()
     print(" The time taken todo a comparative binary search is: ") 
     Total_time=0
     for element in range (5):
